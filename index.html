@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7b4c7">
+  <title>Feliz cumpleaños, mamá 🌻</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="flower flower1" aria-hidden="true">🌻</div>
+  <div class="flower flower2" aria-hidden="true">🌷</div>
+  <div class="flower flower3" aria-hidden="true">🌻</div>
+  <div class="flower flower4" aria-hidden="true">🌸</div>
+  <div class="flower flower5" aria-hidden="true">🌻</div>
+
+  <main class="container">
+    <section class="welcome" id="inicio">
+      <p class="small-title">✦ Un día para celebrar a alguien maravillosa ✦</p>
+      <div class="sun-badge" aria-hidden="true">🌻</div>
+      <h1>¡Feliz cumpleaños!</h1>
+      <h2>mamá hermosa</h2>
+      <p class="intro">
+        Hoy celebramos tus 39 años y la luz, el cariño y la alegría que
+        regalas cada día. Este pequeño rincón está hecho especialmente para ti. 🌷
+      </p>
+      <button id="surpriseButton" class="main-button">🎁 Abrir tu regalo</button>
+      <span class="scroll-hint">Hecho con todo nuestro amor · 39 vueltas al sol</span>
+    </section>
+
+    <section id="surprise" class="surprise" aria-label="Regalo de cumpleaños">
+      <nav class="section-nav" aria-label="Apartados del regalo">
+        <button class="tab-button active" data-panel="carta">💌 Una carta</button>
+        <button class="tab-button" data-panel="recuerdos">🌻 Nuestros recuerdos</button>
+        <button class="tab-button" data-panel="deseos">🎂 Tus deseos</button>
+        <button class="tab-button" data-panel="foto">📷 Un momento para guardar</button>
+      </nav>
+
+      <section class="gift-panel active" id="carta">
+        <article class="message-card">
+          <div class="heart">💗</div>
+          <p class="small-title">Palabras desde el corazón</p>
+          <h2>Para ti, mamá</h2>
+          <p>
+            Gracias por tus abrazos que siempre reconfortan, por tus consejos,
+            tus risas y por hacer que cualquier lugar se sienta como hogar.
+          </p>
+          <p>
+            En tus 39 años deseo que recibas todo el amor que das multiplicado.
+            Que este nuevo año te regale momentos felices, sueños cumplidos y
+            muchas razones para sonreír.
+          </p>
+          <p class="special">Te queremos más de lo que las palabras pueden decir. 🌻</p>
+          <span class="signature">Con todo nuestro amor 💕</span>
+        </article>
+
+        <div class="bouquet" aria-hidden="true">
+          <span>🌻</span><span>🌷</span><span>🌻</span><span>🌸</span><span>🌻</span>
+        </div>
+      </section>
+
+      <section class="gift-panel" id="recuerdos">
+        <div class="panel-heading">
+          <span>Pequeños instantes, amor infinito</span>
+          <h2>Nuestros recuerdos 🌷</h2>
+          <p>Un espacio para guardar momentos que siempre nos harán sonreír.</p>
+        </div>
+
+        <div class="memory-grid">
+          <article class="memory-card">
+            <div class="memory-icon">📸</div>
+            <h3>Un momento especial</h3>
+            <p>Aquí puedes contar una anécdota bonita que hayan vivido juntas o juntos.</p>
+          </article>
+
+          <article class="memory-card">
+            <div class="memory-icon">🌼</div>
+            <h3>Tu sonrisa favorita</h3>
+            <p>Escribe sobre ese recuerdo que todavía te hace reír cada vez que lo cuentas.</p>
+          </article>
+
+          <article class="memory-card">
+            <div class="memory-icon">💞</div>
+            <h3>Por muchos más</h3>
+            <p>Que nos queden muchísimas aventuras, abrazos y fotografías por compartir.</p>
+          </article>
+        </div>
+
+        <p class="photo-note">
+          Puedes cambiar estas tarjetas por fotos: añade tus imágenes a la carpeta
+          y personaliza el contenido.
+        </p>
+      </section>
+
+      <section class="gift-panel" id="deseos">
+        <div class="panel-heading">
+          <span>39 razones para celebrar</span>
+          <h2>Un deseo para tu nuevo año ✨</h2>
+        </div>
+
+        <div class="wish-card">
+          <div class="cake-emoji">🎂</div>
+          <p>
+            Que nunca te falten flores, canciones, apapachos ni tiempo para hacer
+            eso que te hace feliz. Que cada día encuentres una razón para brillar,
+            igual que un girasol mirando al sol.
+          </p>
+          <p class="special">
+            ¡Que tus 39 estén llenos de amor y momentos inolvidables! 💛
+          </p>
+          <button class="main-button" id="wishButton">Pedir un deseo ✨</button>
+        </div>
+
+        <div class="cake-text">Un pastelito virtual para ti, chaparrita 🎂</div>
+      </section>
+
+      <section class="gift-panel" id="foto">
+        <div class="panel-heading">
+          <span>Un recuerdo lleno de flores</span>
+          <h2>Un momento para guardar 💐</h2>
+          <p>Nunca olvides al hombre que nos cuido</p>
+        </div>
+
+        <figure class="featured-photo">
+          <img src="image%201.jpeg" alt="Mamá junto a un ramo de flores" loading="lazy">
+          <figcaption>
+            Feliz Cumpleaños mamá 🌷
+          </figcaption>
+        </figure>
+      </section>
+    </section>
+
+    <footer class="footer">Hecho con amor 🌻</footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    ¡Tu deseo ya va en camino! ✨
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
